@@ -1,0 +1,36 @@
+h1{
+    color: rgb(90, 23, 42);
+}
+span{
+    color: rgb(223, 23, 23);
+}
+/* 上面的是元素选择器，对于所有的标签 */
+
+/* 类选择器  类可以重复*/
+.cls{
+    color: #ccc;
+}
+
+/* id选择器 id不可以重复 */
+#ids{
+    color: rgb(135, 65, 204);
+    /* 字体大小 */
+    font-size: 43px; 
+}
+a{
+    color: black;
+    /* 去除下划线 */
+    text-decoration: none;
+}
+
+
+p{
+    text-indent: 35px;/* 这个是首行缩进 */
+    /* 设置行高 */
+    line-height: 40px;
+}
+/* 选择器优先级排序：id > class > 元素 */
+
+.zheyang{
+    text-align: right;
+}

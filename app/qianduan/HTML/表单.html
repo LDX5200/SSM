@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form 表单
+        action：表单提交的url，往何处提交数据，不指定则提交到当前页面        
+        method：设置提交方式
+
+        get方式：在url后面写表单数据，但是url长度有限，get是method的默认值
+        file:///C:/Users/13581/Desktop/vs_all/app/qianduan/HTML/%E8%A1%A8%E5%8D%95.html?username=&age=
+        ->
+        file:///C:/Users/13581/Desktop/vs_all/app/qianduan/HTML/%E8%A1%A8%E5%8D%95.html?username=12&age=12
+        
+        post方式：在消息体（请求体）中传递，表单大小无限制
+        表单必须有name属性才能提交
+    -->
+
+    <form action="" method="post">
+        用户名: <input type="text" name = "username">
+        年龄： <input type="text" name="age">
+        
+
+        <!-- 表单项提交的值 -->
+        radio定义单选按钮<br>
+        <!--   
+            lable就是意思是框在一块 
+            点男 那个点点也会被选中
+            name得相通 这样的话 选男就不会选女
+            value代表提交的值
+        -->
+        <!-- value 选男返回1 -->
+        性别:<label><input type="radio" name="gender" value="1"> 男 </label>
+             <label><input type="radio" name="gender" value="2"> 女 </label>
+        <!-- 按钮 -->
+        <input type="submit" value="提交">
+        <input type="button" value="按钮">
+    </form>
+</body>
+</html>
